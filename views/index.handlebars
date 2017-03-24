@@ -1,0 +1,14 @@
+<h2>Iniciar sesión</h2>
+
+<form id="signin-form" method="post" action="/auth/signin">
+    <input id="email" name="email" type="email" placeholder="ingresa tu correo"/>
+    <input id="password" name="password" type="password" placeholder="ingresa tu password"/>
+    <input type="submit">
+</form>
+<a href="/resgistrase">Registrase</a>
+
+{{#if error}}
+<div class="error">  
+    <p>{{message}}</p>
+</div>
+{{/if}}

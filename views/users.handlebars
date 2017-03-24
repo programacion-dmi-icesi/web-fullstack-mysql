@@ -1,0 +1,7 @@
+<h2>Listado de usuarios</h2>
+<table>
+    <tr><th>Nickname</th><th>Nombre</th><th>Correo</th><td></td></tr>
+{{#each users}}
+    <tr><td>{{nickname}}</td><td>{{nombre}}</td><td>{{correo}}</td><td><a href="/users/{{correo}}/posts">ver posts</a></td></tr>
+{{/each}}
+</table>
